@@ -22,11 +22,23 @@ canvas {
   touch-action: none;
 }
 
-.scrim-max-width {
+.screen-max-width {
   margin-inline-start: auto;
   margin-inline-end: auto;
   position: relative;
   max-width: 1120px;
+}
+
+.advertise-container {
+  max-width: 400px;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.text-gray-white {
+  color: rgb(245, 245, 247);
 }
 
 @layer utilities {
@@ -39,7 +51,7 @@ canvas {
   }
 
   .btn {
-    @apply px-5 py-2 rounded-3xl bg-blue my-5 hover:bg-transparent border border-transparent hover:border hover:text-blue hover:border-blue;
+    @apply px-5 py-2 rounded-3xl bg-blue-400 my-5 hover:bg-transparent border border-transparent hover:border hover:text-blue-500 hover:border-blue-500;
   }
 
   .color-container {

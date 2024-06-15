@@ -9,7 +9,19 @@ import {
   yellowImg,
 } from '../utils';
 
-export const navLists = ['Store', 'Mac', 'iPhone', 'Support'];
+export const navLists = [
+  'Store',
+  'Mac',
+  'iPad',
+  'iPhone',
+  'Watch',
+  'Vision',
+  'AirPods',
+  'TV & Home',
+  'Entertainment',
+  'Accessories',
+  'Support',
+];
 
 export const hightlightsSlides = [
   {
@@ -85,3 +97,6 @@ export const footerLinks = [
   'Legal',
   'Site Map',
 ];
+
+export const advertiseText =
+  'Get $170–$630 in credit toward iPhone 15 Pro when you trade in iPhone 11 or higher.*';
