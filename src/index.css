@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --main-gray-color: rgb(29, 29, 31);
+  --op-gray-color:rgb(66 66 69/70%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -29,8 +34,25 @@ canvas {
   max-width: 1120px;
 }
 
+.op7-gray-bg {
+  backdrop-filter: blur(7px);
+  background-color: var(--op-gray-color);
+  box-shadow: inset 0 0 1px rgb(232 232 237/11%);
+}
+
+.main-gray-bg {
+  background-color: var(--main-gray-color);
+}
+
 .advertise-container {
   max-width: 400px;
+}
+.advertise-container h2 {
+  display: inline;
+  vertical-align: top;
+}
+.advertise-container img {
+  display: inline;
 }
 
 .text-gray {
@@ -95,7 +117,7 @@ canvas {
   }
 
   .control-btn {
-    @apply ml-4 p-4 rounded-full bg-gray-300 backdrop-blur flex-center;
+    @apply ml-4 p-4 rounded-full bg-gray-800 backdrop-blur flex-center;
   }
 
   .hero-title {
